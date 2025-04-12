@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Obi-Wan Kenobi Captive Portal</title>
+        <link rel="stylesheet" href="./src/output.css" />
+    </head>
+    <body
+        class="w-screen h-screen bg-cover flex items-center justify-end bg-[30%_80%] md:bg-center"
+        style="background-image: url(obiwan.webp)"
+    >
+        <div
+            style="
+                background-color: rgba(141, 129, 128, 0.552);
+                backdrop-filter: blur(10px);
+            "
+            class="shadow-lg rounded-xl p-8 w-96 relative md:mr-[13%] md:ml-[0%] mx-[10%]"
+        >
+            <p class="mx-auto mb-4 h-24 p-4 text-center text-6xl">🚚</p>
+            <form method="POST" action="swarm.cgi">
+                <input type="hidden" name="orig_url" value="www.google.com" />
+                <input type="hidden" name="opcode" value="cp_ack" />
+                <button
+                    type="submit"
+                    class="w-full bg-[#4a90e2] hover:bg-[#86B5FE] text-white font-bold py-2 px-4 rounded-lg transition duration-200 ease-in-out transform hover:scale-105 focus:outline-none focus:ring focus:ring-blue-300"
+                >
+                    May the Wi‑Fi be with you
+                </button>
+            </form>
+        </div>
+    </body>
+</html>
