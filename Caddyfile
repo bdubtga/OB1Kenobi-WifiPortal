@@ -1,0 +1,8 @@
+*:80 {
+    file_server
+    root * /srv
+
+    handle_path /auth {
+        respond "sideways"
+    }
+}

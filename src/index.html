@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Obi-Wan Kenobi Captive Portal</title>
-        <link rel="stylesheet" href="./src/output.css" />
+        <link rel="stylesheet" href="output.css" />
     </head>
     <body
         class="w-screen h-screen bg-cover flex items-center justify-end bg-[30%_80%] md:bg-center"
@@ -18,7 +18,7 @@
             class="shadow-lg rounded-xl p-8 w-96 relative md:mr-[13%] md:ml-[0%] mx-[10%]"
         >
             <p class="mx-auto mb-4 h-24 p-4 text-center text-6xl">🚚</p>
-            <form method="POST" action="swarm.cgi">
+            <form method="POST" action="/auth">
                 <input type="hidden" name="orig_url" value="www.google.com" />
                 <input type="hidden" name="opcode" value="cp_ack" />
                 <button
